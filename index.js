@@ -1,17 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+let n = parseInt(readline());
+	while(n--)
+   {
+      let arr = [];
+	arr = readline().split(" ");
+	var a = arr[0];
+	var b = arr[1];
+	var c = arr[2];
+      var l;
+// write your code here
+    arr = "45 23 54"
+	if((a > b && a < c) ||(a < b && a > c)){
+    	console.log(a);
+	}else if((b > a && b < c) || (b < a && b > c)){
+    	console.log(b)
+	}else{
+    	console.log(c);
+	}
+}
